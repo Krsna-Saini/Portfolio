@@ -1,0 +1,137 @@
+:root {
+  --opacity: 0.5;
+  --primary-color: #0c1120;
+  --secondary-color: #090e1a;
+  --tertionary-color: #10172a;
+  --gradiant-color: #04b5d5;
+  --gradiant-color2: #3c82f5;
+  --blue-gradiant: (90deg, #0de6f7 0%, #3887f4 100%);
+  --font-family-robot: "Inter", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-large: 700;
+  --index-1: 5;
+  --index-5: 3;
+  --index-3: 4;
+}
+.skill {
+  width: 35vw;
+  height: 70vh;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas:
+    "react"
+    "node"
+    "css"
+    "mongo";
+}
+.react_class,.node_class,.css_class,.mongo_class {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  margin-bottom: 10px;
+  transition: transform 1s ease-out;
+  background-color: transparent;
+}
+.react_class {
+  display: flex;
+}
+.node_class {
+  display: flex;
+}
+.css_class {
+  display: flex;
+}
+.mongo_class {
+  display: flex;
+}
+.skill_name>strong {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: var(--font-family-robot);
+  font-size: 42px;
+  background: linear-gradient(45deg, var(--gradiant-color), var(--gradiant-color2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.web {
+  font-family: var(--font-family-robot);
+    font-size: 72px;
+    background: linear-gradient(45deg,var(--gradiant-color),var(--gradiant-color2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 8vw;
+}
+.plat {
+  text-decoration: wavy;
+  font-family: var(--font-family-robot);
+    font-size: 72px;
+    background: linear-gradient(45deg,var(--gradiant-color),var(--gradiant-color2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10vw;
+}
+.platform {
+  margin-top: 8vh;
+  display: flex;
+  justify-content: space-around;
+}
+.codechef,.code_forces,.Leetcode {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+}
+.codechef {
+  transition: all 0.7s ease;
+  opacity: 0.1;
+  transform: scale(0.5) translateY(200px);
+  box-shadow: 0 4px 20px rgba(139, 69, 19, 0.8), 0 6px 30px rgba(205, 133, 63, 0.8);
+  background: linear-gradient(135deg, #8b4513 0%, #cd853f 100%);
+}
+.code_forces {
+  transition: all 0.7s ease;
+  background: linear-gradient(135deg, #0078d7 0%, #ff4500 100%);
+  opacity: 0.1;
+  transform: scale(0.5) translateY(200px);
+  box-shadow: 0 4px 20px rgba(0, 120, 215, 0.8), 0 6px 30px rgba(255, 69, 0, 0.8);
+  background: linear-gradient(135deg, #1f8ac0 0%, #ff6347 100%);
+}
+.Leetcode {
+  transition: all 0.7s ease;
+  opacity: 0.1;
+  transform: scale(0.5) translateY(200px);
+  background: linear-gradient(135deg, #ffa500 0%, #212121 100%);
+  background: linear-gradient(135deg, #f79f1b 0%, #333 100%);
+  box-shadow: 0 4px 20px rgba(255, 165, 0, 0.8), 0 6px 30px rgba(33, 33, 33, 0.8);
+}
+.buttons{
+  display: flex;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   justify-content: space-around;
+}
+.button{
+  background: #161e2a;
+  color: #92a5b9;
+  border: 2px solid #263040 ;
+  border-radius:15px;
+  font-size: 1.1rem;
+  width: 120%;
+  height: 25px;
+  padding-top: 7px;
+  text-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  text-justify:center;
+  text-align: center;
+  margin-right: 10px;
+}
+.button:hover{
+  color: rgb(224, 212, 212);
+}
