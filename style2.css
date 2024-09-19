@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
   --opacity: 0.5;
   --primary-color: #0c1120;
@@ -86,6 +87,7 @@
   align-items: center;
   width: 300px;
   height: 200px;
+  font-family:var( --font-family-robot);
 }
 .codechef {
   transition: all 0.7s ease;
