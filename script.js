@@ -125,3 +125,17 @@ window.addEventListener('scroll', () => {
         document.querySelector('.Leetcode').style.transform ="scale(0.5) translateY(200px)";
     }
 });
+window.addEventListener('scroll', () => {
+    const platDiv = document.querySelector('.webseries');
+    const platRect = platDiv.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (platRect.top >0 && platRect.top<windowHeight*0.8) {
+        document.querySelector('.webseries').style.opacity = 1;
+        document.querySelector('.webseries').style.transform ='scale(1) translateY(0px)';
+    }
+    else{
+        document.querySelector('.webseries').style.opacity = 0.1;
+        document.querySelector('.webseries').style.transform ='scale(0.6) translateY(100px)';
+    }
+});
