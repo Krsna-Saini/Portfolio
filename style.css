@@ -314,6 +314,7 @@ a{
     font-size: 1.1rem;
 }
 .photo {
+    margin-top: 40px;
     width: auto;
     height: auto;
     background-color: var(--secondary-color);
