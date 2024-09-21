@@ -14,6 +14,7 @@
   --index-5: 3;
   --index-3: 4;
 }
+
 .skill {
   width: 35vw;
   height: 70vh;
@@ -27,7 +28,11 @@
     "css"
     "mongo";
 }
-.react_class,.node_class,.css_class,.mongo_class {
+
+.react_class,
+.node_class,
+.css_class,
+.mongo_class {
   position: absolute;
   left: 0;
   width: 100%;
@@ -36,18 +41,23 @@
   transition: transform 1s ease-out;
   background-color: transparent;
 }
+
 .react_class {
   display: flex;
 }
+
 .node_class {
   display: flex;
 }
+
 .css_class {
   display: flex;
 }
+
 .mongo_class {
   display: flex;
 }
+
 .skill_name>strong {
   margin-left: 20px;
   margin-top: 20px;
@@ -57,36 +67,67 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.web,
+.plat,
+.contact-section {
+  font-family: var(--font-family-robot);
+  font-size: 72px;
+  background: linear-gradient(45deg, var(--gradiant-color), #2c9374);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+}
+
 .web {
-  font-family: var(--font-family-robot);
-    font-size: 72px;
-    background: linear-gradient(45deg,var(--gradiant-color),var(--gradiant-color2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 8vw;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
 }
-.plat {
-  text-decoration: wavy;
-  font-family: var(--font-family-robot);
-    font-size: 72px;
-    background: linear-gradient(45deg,var(--gradiant-color),var(--gradiant-color2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 10vw;
-}
+
 .platform {
   margin-top: 8vh;
   display: flex;
   justify-content: space-around;
+  position: relative;
+  z-index: 2;
 }
-.codechef,.code_forces,.Leetcode {
+
+.outerplat {
+  position: relative;
+  /* Required for z-index to work */
+  display: flex;
+  width: fit-content;
+  border-radius: 50%;
+  left: 8vw;
+}
+
+.outerplat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, #103f42, var(--primary-color));
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.codechef,
+.code_forces,
+.Leetcode {
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 300px;
   height: 200px;
+  position: relative;
+  z-index: 1;
 }
+
 .codechef {
   transition: all 0.7s ease;
   opacity: 0.1;
@@ -94,6 +135,7 @@
   box-shadow: 0 4px 20px rgba(139, 69, 19, 0.8), 0 6px 30px rgba(205, 133, 63, 0.8);
   background: linear-gradient(135deg, #8b4513 0%, #cd853f 100%);
 }
+
 .code_forces {
   transition: all 0.7s ease;
   background: linear-gradient(135deg, #0078d7 0%, #ff4500 100%);
@@ -102,6 +144,7 @@
   box-shadow: 0 4px 20px rgba(0, 120, 215, 0.8), 0 6px 30px rgba(255, 69, 0, 0.8);
   background: linear-gradient(135deg, #1f8ac0 0%, #ff6347 100%);
 }
+
 .Leetcode {
   transition: all 0.7s ease;
   opacity: 0.1;
@@ -110,17 +153,19 @@
   background: linear-gradient(135deg, #f79f1b 0%, #333 100%);
   box-shadow: 0 4px 20px rgba(255, 165, 0, 0.8), 0 6px 30px rgba(33, 33, 33, 0.8);
 }
-.buttons{
+
+.buttons {
   display: flex;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-around;
 }
-.button{
+
+.button {
   background: #161e2a;
   color: #92a5b9;
-  border: 2px solid #263040 ;
-  border-radius:15px;
+  border: 2px solid #263040;
+  border-radius: 15px;
   font-size: 1.1rem;
   width: 120%;
   height: 25px;
@@ -128,15 +173,87 @@
   text-shadow: none;
   box-shadow: none;
   cursor: pointer;
-  text-justify:center;
+  text-justify: center;
   text-align: center;
   margin-right: 10px;
 }
-.button:hover{
+
+.button:hover {
   color: rgb(224, 212, 212);
 }
-.webseries{
+
+.webseries {
   width: 100vw;
   height: auto;
   transition: all 0.6s ease-in-out;
+}
+
+.contact {
+  margin-top: 15px;
+  padding-top:10vh ;
+  display: flex;
+  padding-bottom: 10vh;
+  position: relative;
+}
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(at center bottom, var(--tertionary-color), var(--primary-color),var(--primary-color));
+  filter: blur(20px);
+  z-index: 0;
+}
+.contact1 {
+  margin-right: 50vw;
+  background: linear-gradient(45deg, var(--gradiant-color), #2c9374);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 8vw;
+  font-size: 1.5rem;
+  padding-top:13px;
+  font-family: var(--font-family-robot);
+  animation: pinky 10s ease infinite;
+  z-index: 1;
+}
+
+@keyframes pinky {
+  70%{
+    background: linear-gradient(45deg, var(--gradiant-color), #2c9374);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+75%{
+  background: linear-gradient(45deg,  rgb(201, 116, 130),rgb(244, 7, 47),rgb(201, 116, 130));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+80%{
+  background: linear-gradient(45deg, var(--gradiant-color), #2c9374);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+85%{
+  background: linear-gradient(45deg, var(--gradiant-color), #2c9374);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+90%{
+  background: linear-gradient(45deg,  rgb(201, 116, 130),rgb(244, 7, 47),rgb(201, 116, 130));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+}
+95%{
+  background: linear-gradient(45deg, var(--gradiant-color), #2c9374);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+}
+#contact2{
+  position: relative;
+  z-index: 1;
+  margin: 0px 10px;
 }
